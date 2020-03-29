@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -27,8 +29,8 @@ end
 
 group :development, :test do
   gem 'fabrication'
-  gem 'pry-clipboard'
   gem 'pry-byebug'
+  gem 'pry-clipboard'
   gem 'pry-rails'
   gem 'rspec-rails'
   gem 'simplecov', require: false
