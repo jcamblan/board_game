@@ -6,6 +6,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.2'
 
 gem 'action_policy'
+gem 'bootsnap', '>= 1.4.2', require: false
 gem 'clearance'
 gem 'doorkeeper'
 gem 'faker'
