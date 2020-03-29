@@ -20,10 +20,20 @@ Layout/LineLength:
 Metrics/BlockLength:
   Exclude:
     - "config/routes.rb"
-    - "db/schema.rb"
+    - "db/**/*"
     - "config/environments/*.rb"
     - "spec/**/*"
+Metrics/MethodLength:
+  Exclude:
+    - "app/controllers/graphql_controller.rb"
+    - "db/**/*"
 Metrics/AbcSize:
   Exclude:
     - "db/migrate/*"
     - "db/seeds.rb"
+Style/Documentation:
+  Enabled: false
+Metrics/AbcSize:
+  Exclude:
+    - "app/controllers/graphql_controller.rb"
+    - "db/**/*"
