@@ -1,0 +1,14 @@
+default: &default
+  adapter: postgresql
+  host: localhost
+  encoding: unicode
+  pool: 5
+  template: template0
+
+development:
+  <<: *default
+  database: board_game_dev
+
+test:
+  <<: *default
+  database: board_game_dev

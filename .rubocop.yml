@@ -1,0 +1,29 @@
+require:
+  - rubocop-rails
+  - rubocop-rspec
+
+# inherit_from: .rubocop_todo.yml
+
+Rails:
+  Enabled: true
+Layout/LineLength:
+  Enabled: true
+  Max: 90
+  Exclude:
+    - "db/schema.rb"
+    - "db/migrate/*"
+    - "Gemfile"
+    - "db/seeds.rb"
+    - "config/routes.rb"
+    - "spec/**/*"
+  IgnoredPatterns: ['(\A|\s)#'] # ignored comment line
+Metrics/BlockLength:
+  Exclude:
+    - "config/routes.rb"
+    - "db/schema.rb"
+    - "config/environments/*.rb"
+    - "spec/**/*"
+Metrics/AbcSize:
+  Exclude:
+    - "db/migrate/*"
+    - "db/seeds.rb"
