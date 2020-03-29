@@ -14,7 +14,6 @@ gem 'graphql'
 gem 'pg'
 gem 'puma'
 gem 'rails', '~> 6.0.2'
-gem 'sorbet-runtime'
 gem 'strong_migrations'
 
 group :development do
@@ -24,7 +23,6 @@ group :development do
   gem 'rubocop'
   gem 'rubocop-rails'
   gem 'rubocop-rspec'
-  gem 'sorbet'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
